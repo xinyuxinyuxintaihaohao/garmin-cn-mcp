@@ -27,7 +27,6 @@
 | 🩸 血氧 | `get_spo2` | SpO2 数据 |
 | 🫁 呼吸 | `get_respiration` | 呼吸频率 |
 | 🏅 其他 | `get_earned_badges` | 已获徽章 |
-| | `get_user_summary` | 每日健康摘要 |
 | | `get_gear` | 装备数据 |
 
 ## 为什么需要这个？

@@ -290,17 +290,6 @@ def get_earned_badges() -> str:
 
 
 @mcp.tool()
-def get_user_summary(date: str = "") -> str:
-    """获取某天的健康摘要（步数、卡路里、距离等）
-
-    Args:
-        date: 日期 YYYY-MM-DD，默认今天
-    """
-    date = date or _today()
-    return _jd(_api_get(f"/usersummary-service/usersummary/daily/{date}"))
-
-
-@mcp.tool()
 def get_gear() -> str:
     """获取装备数据（跑鞋、自行车等）"""
     return _jd(_api_get("/gear-service/gear/filterGear", backend="gc-api"))
